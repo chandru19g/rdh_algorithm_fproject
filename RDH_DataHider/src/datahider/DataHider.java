@@ -1,7 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package datahider;
 
 import java.awt.color.ColorSpace;
@@ -14,10 +10,6 @@ import java.net.DatagramSocket;
 import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 
-/**
- *
- * @author seabirds
- */
 public class DataHider extends Thread
 {
     DataHiderFrame df;
@@ -61,13 +53,9 @@ public class DataHider extends Thread
                         }
                         System.out.println();
                     }                    
-                    /*BufferedImageOp op1 = new ColorConvertOp(ColorSpace.getInstance(ColorSpace.CS_GRAY), null);
-                    BufferedImage gImg=op1.filter(bi1, null);
+                    
             
-                    ImageIO.write(bi1, "png",new File("org1.png"));
-                    ImageIO.write(gImg, "png",new File("gry1.png"));*/
-            
-                }// data
+                }
                 
                 
                 if(req[0].equals("Data1"))
@@ -98,7 +86,7 @@ public class DataHider extends Thread
                     df.jButton2.setEnabled(true);
                     
             
-                }// data1
+                }
                 
             }
         }

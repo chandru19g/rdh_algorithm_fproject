@@ -1,7 +1,4 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package receiver;
 
 import java.awt.color.ColorSpace;
@@ -14,10 +11,6 @@ import java.net.DatagramSocket;
 import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 
-/**
- *
- * @author seabirds
- */
 public class Receiver extends Thread
 {
     ReceiverFrame rf;
@@ -63,13 +56,8 @@ public class Receiver extends Thread
                         }
                         System.out.println();
                     }                    
-                    /*BufferedImageOp op1 = new ColorConvertOp(ColorSpace.getInstance(ColorSpace.CS_GRAY), null);
-                    BufferedImage gImg=op1.filter(bi1, null);
-            
-                    ImageIO.write(bi1, "png",new File("org1.png"));
-                    ImageIO.write(gImg, "png",new File("gry1.png"));*/
-            
-                }// data
+                    
+                }
                 
                 
                 if(req[0].equals("Image1"))
@@ -101,7 +89,7 @@ public class Receiver extends Thread
                     rf.jButton1.setEnabled(true);
                     
             
-                }// data1
+                }
             }
         }
         catch(Exception e)
